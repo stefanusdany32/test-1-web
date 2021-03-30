@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "photogallery165": {
+      "hosting": {
+        "app": [
+          "photogallery165"
+        ]
+      }
+    }
+  }
+}

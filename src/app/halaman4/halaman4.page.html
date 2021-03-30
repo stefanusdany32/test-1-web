@@ -1,21 +1,17 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
+  
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-button (click)=pindah()>Ke halaman 4</ion-button>
+<ion-content>
   <ion-grid>
     <ion-row>
       <ion-col size="3" *ngFor="let iFoto of urlImageStorage; index as position">
-        <ion-title>{{namafoto[position]}}</ion-title><br><br>
         <ion-img [src]="iFoto"></ion-img>
-
       </ion-col>
-     
     </ion-row>
   </ion-grid>
 </ion-content>
